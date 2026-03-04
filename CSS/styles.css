@@ -12,6 +12,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  perspective: 1000px;
 }
 
 .opening-page::before {
@@ -53,16 +54,18 @@ body {
   width: 1800px;
   height: auto;
   z-index: 2;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
 }
 
-/* gradient divier styles */
+/* gradient divider styles */
 .gradient-divider {
   position: relative;
   width: 100vw;
-  height: 100px;
+  height: 500px;
   background: linear-gradient(
     180deg,
-    #030713 30%,
+    #02020a 50%,
     var(--BrandPrimary__Brandprimary) 100%
   );
 }
