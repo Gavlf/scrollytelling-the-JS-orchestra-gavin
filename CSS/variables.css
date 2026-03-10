@@ -20,12 +20,14 @@
   --Objectsurfacesecondary: var(--Blues__Blue55);
   --Objectaccentprimary: var(--Blues__Blue40);
   --Objectaccentsecondary: var(--Blues__Blue10);
+  --Objectaccenttertiary: var(--Neutrals__White90);
   --Clothingaccentprimary: var(--Blues__Blue90);
   --Clothingaccentsecondary: var(--Blues__Blue60);
   --Clothingaccenttertiary: var(--Blues__Blue10);
   --Clothingsurfaceprimary: var(--Blues__Blue35);
   --Clothingsurfacesecondary: var(--Blues__Blue30);
   --Clothingsurfacetertiary: var(--Blues__Blue50);
+  --Objectsurfacetertiary: var(--Blues__Blue50);
   --Clothingaccentsecondarytertiary: var(--Blues__Blue40);
   --Buildingaccentprimary: var(--Blues__Blue55);
   --Buildingaccentsecondary: var(--Blues__Blue40);

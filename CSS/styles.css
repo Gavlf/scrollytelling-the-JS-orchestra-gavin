@@ -1,14 +1,151 @@
-/* css reset */
+/* css reset + background */
+html,
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+html {
+  background: linear-gradient(180deg, #c9f6ff 0%, #d1d1d1 100%);
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100vh;
+  background: transparent;
+}
 
 /* Building SVG Styles */
+#building {
+  position: relative;
+}
+
+#building-surface,
+#windows-surface,
+#building-details,
+#building-door {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
 #building-surface{
-  fill:#eff0f5;
+  fill: var(--Buildingsurfaceprimary);
+  z-index: 3;
 }
 
 #window-cutout{
-  fill:none;
+  fill: none;
+}
+
+#windows-surface{
+  fill: var(--Windowprimary);
+  z-index: 1;
+}
+
+#building-details{
+  fill: var(--Buildingaccentsecondary);
+  z-index: 3;
+}
+
+#building-door{
+  fill: var(--Buildingaccentprimary);
+  z-index: 4;
+}
+
+#building-top{
+  z-index: 1;
+}
+
+.gray-building-top{
+  fill: var(--Buildingaccentprimary);
+}
+
+#white-building-top{
+  fill: var(--Buildingsurfaceprimary);
+}
+
+
+
+/* Boss SVG Section Styles */
+#the-boss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#boss,
+#boss-computer,
+#boss-lamp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#boss {
+  z-index: 2;
+}
+
+#boss-computer{
+  z-index: 2;
+  fill: var(--Objectsurfacetertiary);
+}
+
+#boss-lamp {
+  z-index: 2;
+}
+
+.eye{
+  fill: var(--Clothingaccentprimary);
+}
+
+.collar{
+  fill: var(--Clothingsurfaceprimary)
+}
+
+.arm{
+  fill: var(--Clothingaccentsecondary);
+}
+
+.cuff{
+  fill: var(--Clothingsurfaceprimary)
+}
+
+.hair{
+  fill: var(--Clothingaccentprimary);
+}
+
+.skin{ 
+  fill: var(--Skincolorprimary);
+}
+
+.desk{
+  fill: var(--Objectsurfaceprimary);
+}
+
+.desk-top{
+  fill: var(--Objectsurfacesecondary);
+}
+
+.shirt{
+  fill: var(--Clothingaccentprimary);
+}
+
+.chair{
+  fill: var(--Objectsurfacetertiary);
+}
+
+.boss-lamp-blue{
+  fill: var(--Objectaccentprimary);
+}
+
+.boss-lamp-white{
+  fill: var(--Objectaccenttertiary);
 }
