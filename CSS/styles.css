@@ -105,7 +105,14 @@ body {
   fill: var(--Buildingsurfaceprimary);
 }
 
+/* Repeated Elements Styles */
+.lamp-blue{
+  fill: var(--Objectaccentprimary);
+}
 
+.lamp-white{
+  fill: var(--Objectaccenttertiary);
+}
 
 /* Boss SVG Section Styles */
 #the-boss {
@@ -179,10 +186,90 @@ body {
   fill: var(--Objectsurfacetertiary);
 }
 
-.boss-lamp-blue{
-  fill: var(--Objectaccentprimary);
+
+/* Employee SVG Section Styles */
+.employee-lamp, 
+#employee{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
 }
 
-.boss-lamp-white{
-  fill: var(--Objectaccenttertiary);
+#chair-pole{
+  fill: var(--Objectsurfaceprimary);
+}
+
+#chair-mount{
+  fill: var(--Objectsurfacesecondary);
+}
+
+#shoe-front{
+  fill: var(--Clothingaccentprimary);
+}
+
+#chair-connector{
+  fill: var(--Objectsurfaceprimary);
+}
+
+#sock{
+  fill: var(--Clothingaccenttertiary);
+}
+
+#chair-seat{
+  fill: var(--Objectsurfacetertiary);
+}
+
+#chair-back{
+  fill: var(--Objectsurfacetertiary);
+}
+
+#leg-back{
+  fill: var(--Clothingaccentprimary);
+}
+
+#leg-front{
+  fill: var(--Clothingaccentsecondary);
+}
+
+#hand-back{
+  fill: var(--Skincolorprimary);
+}
+
+#hand-front{
+  fill: var(--Skincolorprimary);
+}
+
+#arm-back{
+  fill: var(--Clothingsurfacesecondary);
+}
+
+#arm-front{
+  fill: var(--Clothingsurfacesecondary);
+}
+
+#employee-shirt{
+  fill: var(--Clothingsurfaceprimary);
+}
+
+#employee-collar{
+  fill: var(--Clothingsurfacesecondary);
+}
+
+#employee-head{
+  fill: var(--Skincolorprimary);
+}
+
+#employee-nose{
+  fill: var(--Skincolorprimary);
+}
+
+#employee-eye{
+  fill: var(--Clothingaccentprimary);
+}
+
+#employee-hair{
+  fill: var(--Clothingaccentprimary);
 }
