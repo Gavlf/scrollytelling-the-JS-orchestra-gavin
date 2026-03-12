@@ -388,7 +388,8 @@ body {
 #locker-clock,
 #locker-lamp-2,
 #locker-lamp-1,
-#lower-lockers{
+#lower-lockers,
+#leaving-employee{
   position: absolute;
   top: 0;
   left: 0;
@@ -411,4 +412,40 @@ body {
 
 .hand{
   fill:var(--Objectsurfacetertiary);
+}
+
+.leaving-employee-face{
+  fill: var(--Skincolorprimary);
+}
+
+.leaving-employee-hand{
+  fill: var(--Skincolorprimary);
+}
+
+.leaving-employee-eye{
+  fill: var(--Clothingaccentprimary);
+}
+
+.leaving-employee-leg{
+  fill:var(--Clothingaccentprimary);
+}
+
+.leaving-employee-hair{
+  fill: var(--Clothingaccentprimary);
+}
+
+.skirt{
+  fill:var(--Clothingaccentsecondarytertiary);
+}
+
+.leaving-employee-arm-back{
+  fill: var(--Clothingsurfacesecondary);
+}
+
+.leaving-employee-shirt{
+  fill: var(--Clothingaccenttertiary);
+}
+
+.leaving-employee-arm-front{
+  fill: var(--Clothingsurfacesecondary);
 }
