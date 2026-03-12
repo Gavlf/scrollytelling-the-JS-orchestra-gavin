@@ -286,3 +286,26 @@ body {
 .cubicle-back{
   fill: var(--Objectsurfaceprimary);
 }
+
+/* Breaktime SVG Section Styles */
+#stairs,
+#pingpong-ball{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+#stair-light{
+  fill: var(--Objectsurfaceprimary);
+}
+
+#stair-dark{
+  fill: var(--Objectsurfacesecondary);
+}
+
+.pingpong-ball{
+  fill: var(--Objectspecialaccent);
+}
