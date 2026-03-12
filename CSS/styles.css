@@ -114,6 +114,22 @@ body {
   fill: var(--Objectaccenttertiary);
 }
 
+.locker-outer{
+  fill: var(--Objectsurfaceprimary);
+}
+
+.locker-inner{
+  fill:var(--Objectsurfacetertiary);
+}
+
+.bottle{
+  fill:var(--Objectspecialaccent2);
+}
+
+.cap{
+  fill:var(--Objectsurfacetertiary);
+}
+
 /* Boss SVG Section Styles */
 #the-boss {
   position: absolute;
@@ -291,7 +307,10 @@ body {
 #stairs,
 #pingpong-ball,
 #pingpong-table,
-#pingpong-player{
+#pingpong-player,
+#pingpong-ball-break,
+#break-lamp-l,
+#break-lamp-r{
   position: absolute;
   top: 0;
   left: 0;
@@ -361,4 +380,32 @@ body {
 
 #player-sweater{
   fill: var( --Clothingsurfacesecondary);
+}
+
+/* Clockout SVG Section Styles */
+#clock-out,
+#lockers-1,
+#locker-clock{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+#clock-outside{
+  fill: var(--Objectaccentprimary);
+}
+
+#clock-inside{
+  fill: var(--Objectspecialaccent2);
+}
+
+#odd-hand{
+  fill: var(--Objectsurfacesecondary);
+}
+
+.hand{
+  fill:var(--Objectsurfacetertiary);
 }
