@@ -144,6 +144,14 @@ body {
   line-height: 1.4;
 }
 
+.code-snippet{
+  font-size: var(--Body__TextsizeS);
+  color: var(--Bodycoloraccent);
+  background-color: var(--Windowprimary);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
 /* Boss SVG Section Styles */
 #the-boss {
   position: absolute;
@@ -174,7 +182,15 @@ body {
   position: relative;
   z-index: 3;
   margin-left: 60.5rem;
-  margin-top: -1rem;
+  margin-top: -1.5rem;
+}
+
+#the-boss-code-snippet{
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  margin-left: 60rem;
+  margin-top: 3.5rem;
 }
 
 #boss {
@@ -345,6 +361,13 @@ body {
   width: 100%;
   height: auto;
   z-index: 2;
+}
+
+#the-break-heading{
+  position: relative;
+  z-index: 3;
+  margin-left: 32rem;
+  margin-top: -281rem;
 }
 
 #stair-light{
