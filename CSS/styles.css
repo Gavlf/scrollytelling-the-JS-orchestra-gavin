@@ -370,6 +370,21 @@ body {
   margin-top: -281rem;
 }
 
+#the-break-text{
+  position: relative;
+  z-index: 3;
+  margin-left: 25rem;
+  margin-top: -1.5rem;
+}
+
+#the-break-code-snippet{
+  display:inline-block;
+  position: relative;
+  z-index: 3;
+  margin-left: 25rem;
+  margin-top: 3rem;
+}
+
 #stair-light{
   fill: var(--Objectsurfaceprimary);
 }
