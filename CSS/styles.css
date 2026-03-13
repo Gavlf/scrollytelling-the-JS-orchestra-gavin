@@ -190,7 +190,7 @@ body {
   position: relative;
   z-index: 3;
   margin-left: 60rem;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 
 #boss {
@@ -454,6 +454,7 @@ body {
 #locker-clock,
 #locker-lamp-2,
 #locker-lamp-1,
+#lockers-lamp-1,
 #lower-lockers,
 #leaving-employee{
   position: absolute;
@@ -462,6 +463,34 @@ body {
   width: 100%;
   height: auto;
   z-index: 2;
+}
+
+#clock-out {
+  z-index: auto;
+}
+
+#clock-out-heading{
+  display:inline-block;
+  position: relative;
+  z-index: 6;
+  margin-left: 70rem;
+  margin-top: 272.5rem;
+}
+
+#clock-out-text{
+  display:inline-block;
+  position: relative;
+  z-index: 6;
+  margin-left: 60.5rem;
+  margin-top: -1.5rem;
+}
+
+#the-exit-code-snippet{
+  display:inline-block;
+  position: relative;
+  z-index: 6;
+  margin-left: 59rem;
+  margin-top: 3rem;
 }
 
 #clock-outside{
