@@ -14,9 +14,17 @@ Navigating the website is simple: scroll with your middle mouse button and enjoy
 </ul>
 
 <h2>Visit the Site</h2>
-<ul>
-<li><a href=https://gavlf.github.io/scrollytelling-JavaScript-on-the-job-gavin/>JavaScript on the Job</a></li>
-</ul>
+<a href=https://gavlf.github.io/scrollytelling-JavaScript-on-the-job-gavin/>JavaScript on the Job</a>
 
 <h1>Reflection</h1>
+
+<h2>Metaphor Explained</h2>
+JavaScript on The Job uses the corporate life as a metaphor for basic JavaScript concepts. Users are first introduced to the boss, viewing him from his high-rise office on the top floor of JavaScript tower. As he commands his JavaScript employees, the boss creates events or tasks that are equivalent to JavaScript event listeners. When he is ready to send his orders to the employees, the boss signs off his message with a special signature that is the closing tag for a JavaScript eventListener(). Below him, the employees are waiting to receive the message and activate to respond once it reaches them, just like how JavaScript reacts to a user's command. Once breaktime comes around, users are introduced to the idea of 'the switch' and variables. Employees are labeled as always employees, therefore being constant. While on break, the employee's role changes from working on a task to relaxing. In effect, they 'switch' from work mode to relaxation mode. Lastly, when the day at the office is over, employees clock out using a machine that holds local storage to remember hours and determine their pay based on conditional statements.
+
+<h2>Self Reflection Questions</h2>
+<ul>
+<li>What is one section you are most proud of?</li>
+<p>I am most proud of my "The Break" section. I wasn't sure how the idea of the ping-pong ball leading the users between frames would work at first. However, I was quite content with the way it came out in the end after animating it with GSAP.</p>
+<li></li>
+</ul>
 
