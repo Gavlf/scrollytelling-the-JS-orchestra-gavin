@@ -16,7 +16,7 @@ Navigating the website is simple: scroll with your middle mouse button and enjoy
 <h2>Visit the Site</h2>
 <a href=https://gavlf.github.io/scrollytelling-JavaScript-on-the-job-gavin/>JavaScript on the Job</a>
 <p></p>
-<a href=https://github.com/Gavlf/scrollytelling-JavaScript-on-the-job-gavin/>Build Repo</a>
+<a href=https://github.com/Gavlf/scrollytelling-JavaScript-on-the-job-gavin/>View Build Repo</a>
 
 <h1>Reflection</h1>
 
