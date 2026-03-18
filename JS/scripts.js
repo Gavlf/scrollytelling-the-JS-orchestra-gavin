@@ -5,6 +5,72 @@ gsap.registerPlugin(ScrollTrigger);
 // Hero section - fade in from top on scroll and pin the section in place while the hero elements animate in
 const heroHeadings = gsap.utils.toArray("#hero h1");
 const mainScene = document.querySelector("main");
+let finalPinEndY = 0;
+let isFinalDownLockActive = false;
+let touchStartY = 0;
+
+const lockDownwardScrollAtFinal = (event) => {
+	if (!isFinalDownLockActive) return;
+
+	if (event.type === "wheel") {
+		if (event.deltaY > 0) {
+			event.preventDefault();
+			window.scrollTo(0, finalPinEndY);
+		}
+		return;
+	}
+
+	if (event.type === "touchstart") {
+		touchStartY = event.touches[0]?.clientY ?? 0;
+		return;
+	}
+
+	if (event.type === "touchmove") {
+		const currentY = event.touches[0]?.clientY ?? touchStartY;
+		const isDownwardPageScroll = currentY < touchStartY;
+		if (isDownwardPageScroll) {
+			event.preventDefault();
+			window.scrollTo(0, finalPinEndY);
+		}
+		return;
+	}
+
+	if (event.type === "keydown") {
+		const blocksDownward =
+			event.key === "ArrowDown" ||
+			event.key === "PageDown" ||
+			event.key === "End" ||
+			(event.key === " " && !event.shiftKey);
+
+		if (blocksDownward) {
+			event.preventDefault();
+			window.scrollTo(0, finalPinEndY);
+		}
+	}
+};
+
+const setFinalDownLock = (shouldLock, endY) => {
+	if (typeof endY === "number") {
+		finalPinEndY = endY;
+	}
+
+	if (shouldLock === isFinalDownLockActive) return;
+
+	isFinalDownLockActive = shouldLock;
+
+	if (isFinalDownLockActive) {
+		window.addEventListener("wheel", lockDownwardScrollAtFinal, { passive: false });
+		window.addEventListener("touchstart", lockDownwardScrollAtFinal, { passive: false });
+		window.addEventListener("touchmove", lockDownwardScrollAtFinal, { passive: false });
+		window.addEventListener("keydown", lockDownwardScrollAtFinal, { passive: false });
+		return;
+	}
+
+	window.removeEventListener("wheel", lockDownwardScrollAtFinal);
+	window.removeEventListener("touchstart", lockDownwardScrollAtFinal);
+	window.removeEventListener("touchmove", lockDownwardScrollAtFinal);
+	window.removeEventListener("keydown", lockDownwardScrollAtFinal);
+};
 
 if (heroHeadings.length && mainScene) {
 	gsap.fromTo(
@@ -104,6 +170,31 @@ if (mainScene) {
 		anticipatePin: 1,
 	});
 }
+
+// Final scene - seventh pin after the 9400 pin range
+if (mainScene) {
+	ScrollTrigger.create({
+		trigger: document.body,
+		start: "top -10900px",
+		end: "+=100",
+		pin: mainScene,
+		pinSpacing: true,
+		invalidateOnRefresh: true,
+		anticipatePin: 1,
+		onUpdate: (self) => {
+			const atOrPastEnd = self.progress >= 1;
+			setFinalDownLock(atOrPastEnd, self.end);
+
+			if (atOrPastEnd && self.direction > 0) {
+				window.scrollTo(0, self.end);
+			}
+		},
+		onLeaveBack: (self) => {
+			setFinalDownLock(false, self.end);
+		},
+	});
+}
+
 
 
 

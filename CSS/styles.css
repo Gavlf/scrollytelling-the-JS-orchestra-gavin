@@ -23,7 +23,7 @@ main {
 body::after {
   content: "";
   display: block;
-  height: 320vh;
+  height: 520vh;
   visibility: hidden;
   pointer-events: none;
 }
@@ -576,6 +576,13 @@ body::after {
   margin-top: 3rem;
 }
 
+#employee-shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
 #clock-outside{
   fill: var(--Objectaccentprimary);
 }
@@ -626,4 +633,8 @@ body::after {
 
 .leaving-employee-arm-front{
   fill: var(--Clothingsurfacesecondary);
+}
+
+.shadow{
+  fill: var(--Clothingaccentprimary);
 }
