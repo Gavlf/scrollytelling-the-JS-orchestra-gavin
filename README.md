@@ -25,16 +25,16 @@ JavaScript on The Job uses the corporate life as a metaphor for basic JavaScript
 
 <h2>Self Reflection Questions</h2>
 <ul>
-<li>What is one section you are most proud of?</li>
+<li><h4>What is one section you are most proud of?</h4></li>
 <p></p>
 <p>I am most proud of my "The Break" section. I wasn't sure how the idea of the ping-pong ball leading the users between frames would work at first. However, I was quite content with the way it came out in the end after animating it with GSAP.</p>
-<li>What is one technical bug you solved and how did you solve it?</li>
+<li><h4>What is one technical bug you solved and how did you solve it?</h4></li>
 <p></p>
 <p>One technical bug encountered was my pin sections breaking. To solve this bug, I asked GitHub Copilot for assistance to help me sort out what the underlying problem was.</p>
-<li>What is one accessibility decision you made?</li>
+<li><h4>What is one accessibility decision you made?</h4></li>
 <p></p>
 <p>While my site is lacking in accessibility due to time constraints, I did decide to add a progress bar to help users better understand their position within my scroll story.</p>
-<li>What would you improve with more time?</li>
+<li><h4>What would you improve with more time?</h4></li>
 <p></p>
 <p>With more time, I would like to add more content to my story and improve the accessibility factors. Adding in a reduced motion preference would be a huge upgrade for my site as a whole.</p>
 </ul>
