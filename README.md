@@ -34,7 +34,7 @@ JavaScript on The Job uses the corporate life as a metaphor for basic JavaScript
 <li><h3>What is one accessibility decision you made?</h3></li>
 <p></p>
 <p>While my site is lacking in accessibility due to time constraints, I did decide to add a progress bar to help users better understand their position within my scroll story.</p>
-<li><h4>What would you improve with more time?</h4></li>
+<li><h3>What would you improve with more time?</h3></li>
 <p></p>
 <p>With more time, I would like to add more content to my story and improve the accessibility factors. Adding in a reduced motion preference would be a huge upgrade for my site as a whole.</p>
 </ul>
