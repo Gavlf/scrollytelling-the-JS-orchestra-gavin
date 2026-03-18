@@ -1,4 +1,5 @@
-:root {
+:root,
+:root[data-theme="light"] {
   --Blues__Blue90: #081c3e;
   --Neutrals__White70: #eff0f5;
   --Neutrals__White90: #ffffff;
@@ -57,4 +58,37 @@
   --Body__FontWeight__Fontweightdefault: Regular;
   --Body__Fontweightlight: Light;
   --Body__Fontweightmedium: Medium;
+}
+
+:root[data-theme="dark"] {
+  --Buildingsurfaceprimary: #1f1f22;
+  --Buildingsurfacesecondary: #2f3035;
+  --Windowprimary: #d9dee5;
+  --Objectspecialaccent: #eceef1;
+  --Objectspecialaccent2: #7d8188;
+  --Objectsurfaceprimary: #4b4e54;
+  --Objectsurfacesecondary: #37393f;
+  --Objectaccentprimary: #969aa2;
+  --Objectaccentsecondary: #747982;
+  --Objectaccenttertiary: #f1f3f6;
+  --Objectsurfacetertiary: #3f4248;
+
+  --Clothingaccentprimary: #141518;
+  --Clothingaccentsecondary: #25272c;
+  --Clothingaccenttertiary: #9a9ea6;
+  --Clothingsurfaceprimary: #6a6f78;
+  --Clothingsurfacesecondary: #565b64;
+  --Clothingsurfacetertiary: #3a3d44;
+  --Clothingaccentsecondarytertiary: #666b74;
+
+  --Buildingaccentprimary: #62666e;
+  --Buildingaccentsecondary: #4f535b;
+
+  --Headingcolorprimary: #e1e4e9;
+  --Headingcoloraccent: #e3b845;
+  --Bodycolorprimary: #b8bbc3;
+  --Bodycoloraccent: #8a8e98;
+
+  --Skincolorprimary: var(--Neutrals__Tan75);
+  --Skincoloraccent: var(--Reds__Red80);
 }

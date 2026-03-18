@@ -1,4 +1,4 @@
-/* css reset + background */
+/* Css reset + background */
 html,
 body {
   margin: 0;
@@ -12,11 +12,99 @@ html {
   background-attachment: fixed;
 }
 
+html[data-theme="dark"] {
+  background: linear-gradient(180deg, #0f0f10 0%, #454a52 100%);
+}
+
 body {
   min-height: 100vh;
   background: transparent;
 }
 
+/* Scroll Progress Styles */
+#scroll-progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.55rem;
+  background: color-mix(in srgb, var(--Objectaccentsecondary) 45%, transparent);
+  z-index: 999;
+  pointer-events: none;
+}
+
+#scroll-progress-fill {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: var(--Headingcoloraccent);
+}
+
+/* Theme Toggle Styles */
+#theme-toggle {
+  position: fixed;
+  top: 1.6rem;
+  right: 1rem;
+  z-index: 1000;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--Objectaccentsecondary) 60%, transparent);
+  background: color-mix(in srgb, var(--Objectspecialaccent) 88%, transparent);
+  color: var(--Headingcolorprimary);
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--Objectaccentsecondary) 35%, transparent);
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: color-mix(in srgb, var(--Objectspecialaccent) 96%, transparent);
+}
+
+#theme-toggle .theme-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.65rem;
+  height: 2.65rem;
+  transform: translate(-50%, -50%);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#theme-toggle .theme-icon-moon {
+  fill: var(--Headingcoloraccent);
+  stroke: none;
+}
+
+#theme-toggle .theme-icon-sun {
+  display: none;
+  stroke: var(--Buildingaccentprimary);
+  color: var(--Buildingaccentprimary);
+}
+
+#theme-toggle .theme-icon-sun path,
+#theme-toggle .theme-icon-sun circle {
+  stroke: var(--Buildingaccentprimary);
+}
+
+:root[data-theme="dark"] #theme-toggle .theme-icon-moon {
+  display: none;
+}
+
+:root[data-theme="dark"] #theme-toggle .theme-icon-sun {
+  display: block;
+}
+
+
+/* Padding for pins */
 main {
   padding-bottom: 0;
 }
@@ -55,13 +143,14 @@ body::after {
 #java-script {
   margin-left: -46rem;
   margin-top: 11rem;
+  color: var(--Headingcoloraccent);
 }
 
 #on-the-job {
   position: relative;
   margin-top: -2.5rem;
   z-index: 3;
-  color: var(--Headingcoloraccent);
+  color: var(--Headingcolorprimary);
 }
 
 

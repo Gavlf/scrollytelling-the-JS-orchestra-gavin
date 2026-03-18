@@ -19,6 +19,47 @@ if (lenis) {
 	gsap.ticker.lagSmoothing(0);
 }
 
+const FINAL_PIN_START = 10900;
+const THEME_STORAGE_KEY = "theme";
+const root = document.documentElement;
+const themeToggle = document.querySelector("#theme-toggle");
+
+const applyTheme = (theme) => {
+	root.setAttribute("data-theme", theme);
+
+	if (themeToggle) {
+		const isDark = theme === "dark";
+		themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+		themeToggle.setAttribute("title", isDark ? "Light Mode" : "Dark Mode");
+	}
+};
+
+const initialTheme = localStorage.getItem(THEME_STORAGE_KEY) || root.getAttribute("data-theme") || "light";
+applyTheme(initialTheme);
+
+if (themeToggle) {
+	themeToggle.addEventListener("click", () => {
+		const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+		applyTheme(nextTheme);
+		localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+	});
+}
+
+const scrollProgressFill = document.querySelector("#scroll-progress-fill");
+
+if (scrollProgressFill) {
+	gsap.to(scrollProgressFill, {
+		scaleX: 1,
+		ease: "none",
+		scrollTrigger: {
+			trigger: document.body,
+			start: "top top",
+			end: `top -${FINAL_PIN_START}px`,
+			scrub: true,
+		},
+	});
+}
+
 
 // Hero section - fade in from top on scroll and pin the section in place while the hero elements animate in
 const heroHeadings = gsap.utils.toArray("#hero h1");
@@ -204,7 +245,7 @@ if (mainScene) {
 if (mainScene) {
 	ScrollTrigger.create({
 		trigger: document.body,
-		start: "top -10900px",
+		start: `top -${FINAL_PIN_START}px`,
 		end: "+=500",
 		pin: mainScene,
 		pinSpacing: true,
